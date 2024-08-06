@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<ctype.h>
+#include<string.h>
 #define MAX 3
 
 struct employee// student userdefined datatype 
@@ -18,7 +19,7 @@ void read()
 {
 	for(int i=0;i<3;i++)
 {
-	printf("enter %d employee details :",i);
+	printf("enter %d employee details :\n",i+1);
 	printf("enter ID :");
 	scanf("%d",&e1[i].id);
 	printf("enter name  :");
@@ -35,7 +36,7 @@ void read()
 void display ()
 {
 	for(int i=0;i<3;i++){
-	printf("eemployee ID : %d \n",e1[i].id);
+	printf("employee ID : %d \n",e1[i].id);
 	printf("name :%s \n",e1[i].name);
 	printf("dept :%s \n",e1[i].dept);
 	printf("salary:%d\n",e1[i].sal);
@@ -46,8 +47,10 @@ void search()
 	printf("enter the empolye id :");
 	scanf("%d",&e1.a);
 	for (int i=0;i<2;i++)
-		if(e1[i]==e1.a){
-			printf(" the employee details %d are :", i);
+		{
+			if(strcmp(e1[i].id,e1.a)==0){
+
+			printf("The employee details %d are :", i);
 			printf("employee ID : %d \n",e1[i].id);
 			printf("name :%s \n",e1[i].name);
 			printf("dept :%s\n",e1[i].dept);
@@ -56,6 +59,7 @@ void search()
 
 		else 
 			printf("not found");
+}
 
 }
 
@@ -66,8 +70,3 @@ void  main ()
 	search();
 	//printf("total no of bits %d",sizeof(e1));
 }
-
-
-
-
-
