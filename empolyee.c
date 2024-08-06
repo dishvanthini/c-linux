@@ -6,7 +6,7 @@
 struct employee// student userdefined datatype 
 {
 
-int id,a;
+int id;
 char name[100];
 char dept[100];
 int sal;
@@ -42,26 +42,25 @@ void display ()
 	printf("salary:%d\n",e1[i].sal);
 }
 }
-void search()
-{
+void search(){	
+	int a;
 	printf("enter the empolye id :");
-	scanf("%d",&e1.a);
+	scanf("%d",&a);
 	for (int i=0;i<2;i++)
 		{
-			if(strcmp(e1[i].id,e1.a)==0){
-
-			printf("The employee details %d are :", i);
+			if(e1[i].id==a)
+			{
+			printf("The employee details %d are \n", i+1);
 			printf("employee ID : %d \n",e1[i].id);
 			printf("name :%s \n",e1[i].name);
 			printf("dept :%s\n",e1[i].dept);
 			printf("salary:%d\n",e1[i].sal);
 			}
-
-		else 
+			else 
 			printf("not found");
-}
+		}
 
-}
+		}
 
 void  main ()
 {
