@@ -1,0 +1,18 @@
+// data structure  - the structure 
+// manipulated data - inforamtion 
+// raw - data 
+//input - data , output- information 
+// structure is heterogeneous datatype  , user defined datatype 
+// array is an homogeneous datatype 
+// data structure
+- primitive DS (int char , float ) 
+- non primitive ( array , structure , trees , linked list ) 
+
+what is DS 
+the way we organized the data is called data strucutre 
+how to use structure to store data 
+declaration : 
+struct - keyword to 
+
+
+
