@@ -12,9 +12,6 @@ char dept[100];
 int sal;
 };
 struct employee e1[MAX];
-
-
-
 void read()
 {
 	for(int i=0;i<3;i++)
