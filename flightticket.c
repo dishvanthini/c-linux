@@ -25,8 +25,8 @@ void read()
 	printf("Enter full name  :");
 	getchar();
 	scanf("%[^\n]s",e1[i].name);
-	printf("Enter date of brith :");
-	scanf("%d",&e1[i].dob);
+	printf(" Enter Date of Birth:");
+	scanf("%02d-%02d-%04d \n,&e1[i].d,&e1[i]. m,&e1[i]. y);
 	printf("Enter passport Number:");
 	scanf("%d",&e1[i].passno);
 	printf("Enter contact no :");
@@ -40,6 +40,7 @@ void display ()
 	printf("%d.passenger\n",i);
 	printf("name :%s \n",e1[i].name);
 	printf("DOB: %d \n",e1[i].dob);
+	printf(" Enter Date of Birth:%02d-%02d-%04d \n",e1[i].d,e1[i]. m,e1[i]. y);
 	printf("paassport no  :%d \n",e1[i].passno);
 	printf("Contact no :%d\n",e1[i].phno);
 	}
@@ -53,7 +54,7 @@ void search(){
 			if(e1[i].phno==a)
 			{
 			printf("name :%s \n",e1[i].name);
-			printf("DOB: %d \n",e1[i].dob);
+			printf(" Enter Date of Birth:%02d-%02d-%04d \n",e1[i].d,e1[i]. m,e1[i]. y);
 			printf("paassport no  :%d \n",e1[i].passno);
 			printf("Contact no :%d\n",e1[i].phno);
 			}
